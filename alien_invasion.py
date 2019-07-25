@@ -1,4 +1,6 @@
 import pygame
+from pygame.sprite import Group
+
 
 from settings import Settings
 from ship import Ship
@@ -14,12 +16,15 @@ def run_game():
     pygame.display.set_caption('Alien Invasion')
     ship = Ship(screen, ai_settings)  # 创建飞船
 
+    bullets = Group()
+
     # 开始游戏主循环
     while True:
         '''监视鼠标和键盘'''
-        gf.check_events(ship)
+        gf.check_events(ship, screen, ai_settings, bullets)
         ship.update()
-        gf.update_screen(screen, ai_settings, ship)
+        gf.update_bullets(bullets)
+        gf.update_screen(screen, ai_settings, ship, bullets)
 
 
 run_game()
