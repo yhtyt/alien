@@ -1,6 +1,7 @@
 import pygame
 import sys
 from time import sleep
+import threading
 
 from bullet import Bullet
 from aliens import Alien
@@ -16,6 +17,8 @@ def keydown(event, ship, screen, ai_settings, bullets):
     elif event.key == pygame.K_DOWN:
         ship.move_down = True
     elif event.key == pygame.K_SPACE:
+        t = threading.Thread(target=play_sound('images/bullet.wav'))
+        t.start()
         fire_bullet(bullets, ai_settings, ship, screen)
     elif event.key == pygame.K_q:
         sys.exit()
@@ -65,7 +68,11 @@ def update_bullets(aliens, bullets, ai_settings, screen, ship):
 
 
 def check_bullet_alien_collision(bullets, aliens, ai_settings, screen, ship):
-    collisions = pygame.sprite.groupcollide(bullets, aliens, True, True)
+    collisions = pygame.sprite.groupcollide(bullets, aliens, False, True)
+    if len(collisions):
+        t = threading.Thread(target=play_sound('images/collision.wav'))
+        t.start()
+
     if len(aliens) == 0:
         bullets.empty()
         create_fleet(ai_settings, screen, aliens, ship)
@@ -73,10 +80,8 @@ def check_bullet_alien_collision(bullets, aliens, ai_settings, screen, ship):
 
 def fire_bullet(bullets, ai_settings, ship, screen):
     if len(bullets) < ai_settings.bullets_allow:
-        for i in range(2):
-            new_bullet = Bullet(ship, screen, ai_settings)
-            new_bullet.y += i * (ai_settings.bullet_height + 3)
-            bullets.add(new_bullet)
+        new_bullet = Bullet(ship, screen, ai_settings)
+        bullets.add(new_bullet)
 
 
 '''创建外星人队'''
@@ -167,3 +172,12 @@ def ship_hit(ai_settings, stats, screen, ship, aliens, bullets):
         sleep(0.5)
     else:
         stats.game_active = False
+
+
+def play_sound(path):
+    sound = pygame.mixer.Sound(path)
+    sound.set_volume(0.5)
+    if path == 'images/bullet.wav':
+        sound.play(1, 635)
+    else:
+        sound.play(1, 1100)

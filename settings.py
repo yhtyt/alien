@@ -6,8 +6,8 @@ class Settings:
         self.ship_speed = 1.5
         self.ships_limit = 3
 
-        self.alien_speed = 1
-        self.fleet_drop_speed = 5
+        self.alien_speed = 2
+        self.fleet_drop_speed = 10
         self.fleet_direction = 1
 
         # 子弹的属性
@@ -16,4 +16,4 @@ class Settings:
         self.bullet_height = 12
         self.bullet_color = (60, 60, 60)
 
-        self.bullets_allow = 6
+        self.bullets_allow = 4
