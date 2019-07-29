@@ -22,3 +22,5 @@ class Alien(Sprite):
     def update(self, *args):
         self.x += self.ai_settings.alien_speed
         self.rect.x = self.x
+
+    def

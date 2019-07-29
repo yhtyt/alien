@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e0951f6-e992-4f44-beb0-53420d0a44b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/aliens.py" beforeDir="false" afterPath="$PROJECT_DIR$/aliens.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +159,10 @@
       <workItem from="1564037845860" duration="10248000" />
       <workItem from="1564123805180" duration="877000" />
       <workItem from="1564124697943" duration="2076000" />
-      <workItem from="1564363324706" duration="4813000" />
+      <workItem from="1564363324706" duration="4862000" />
+      <workItem from="1564375664312" duration="97000" />
+      <workItem from="1564375774489" duration="29000" />
+      <workItem from="1564375814105" duration="214000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1563947351091</created>
