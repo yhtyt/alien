@@ -23,4 +23,3 @@ class Alien(Sprite):
         self.x += self.ai_settings.alien_speed
         self.rect.x = self.x
 
-    def
