@@ -170,6 +170,11 @@ def check_bullet_alien_collision(
         stats,
         scoreboard):
     collisions = pygame.sprite.groupcollide(bullets, aliens, True, True)
+    user_scores(collisions, stats, ai_settings, scoreboard)
+    user_level(aliens, bullets, stats, scoreboard, ai_settings, screen, ship)
+
+
+def user_scores(collisions, stats, ai_settings, scoreboard):
     if len(collisions):
         t = threading.Thread(target=play_sound('images/collision.wav'))
         t.start()
@@ -177,6 +182,8 @@ def check_bullet_alien_collision(
             stats.score += ai_settings.alien_points
             scoreboard.prep_score()
 
+
+def user_level(aliens, bullets, stats, scoreboard, ai_settings, screen, ship):
     if len(aliens) == 0:
         bullets.empty()
         stats.level += 1
@@ -253,14 +260,35 @@ def aliens_update(
 
     if pygame.sprite.spritecollideany(ship, aliens):
         ship_hit(ai_settings, stats, screen, ship, aliens, bullets, scoreboard)
-    check_alien_bottom(ai_settings, stats, screen, ship, aliens, bullets, scoreboard)
+    check_alien_bottom(
+        ai_settings,
+        stats,
+        screen,
+        ship,
+        aliens,
+        bullets,
+        scoreboard)
 
 
-def check_alien_bottom(ai_settings, stats, screen, ship, aliens, bullets, scoreboard):
+def check_alien_bottom(
+        ai_settings,
+        stats,
+        screen,
+        ship,
+        aliens,
+        bullets,
+        scoreboard):
     screen_rect = screen.get_rect()
     for alien in aliens.sprites():
         if alien.rect.bottom >= screen_rect.bottom - 2:
-            ship_hit(ai_settings, stats, screen, ship, aliens, bullets, scoreboard)
+            ship_hit(
+                ai_settings,
+                stats,
+                screen,
+                ship,
+                aliens,
+                bullets,
+                scoreboard)
             break
 
 

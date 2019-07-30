@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e0951f6-e992-4f44-beb0-53420d0a44b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/button.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/high_score.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/game_over.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scoreboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/alien_invasion.py" beforeDir="false" afterPath="$PROJECT_DIR$/alien_invasion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bullet.py" beforeDir="false" afterPath="$PROJECT_DIR$/bullet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/game_func.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_func.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game_stats.py" beforeDir="false" afterPath="$PROJECT_DIR$/game_stats.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/collision.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ship.py" beforeDir="false" afterPath="$PROJECT_DIR$/ship.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -228,7 +217,7 @@
       <workItem from="1564402903713" duration="161000" />
       <workItem from="1564403080805" duration="8114000" />
       <workItem from="1564411634525" duration="306000" />
-      <workItem from="1564465118879" duration="19205000" />
+      <workItem from="1564465118879" duration="19563000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1563947351091</created>
@@ -342,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564411184959</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="ok">
+      <created>1564488560627</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1564488560627</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,12 +380,13 @@
     <MESSAGE value="remove" />
     <MESSAGE value="add aliens" />
     <MESSAGE value="fighting" />
-    <option name="LAST_COMMIT_MESSAGE" value="fighting" />
+    <MESSAGE value="ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/alien_invasion$aliens.coverage" NAME="aliens Coverage Results" MODIFIED="1564393451716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/alien_invasion$yyy.coverage" NAME="yyy Coverage Results" MODIFIED="1564481008262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/alien_invasion$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1564488463530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/alien_invasion$alien_invasion.coverage" NAME="alien_invasion Coverage Results" MODIFIED="1564489092134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/alien_invasion$yht.coverage" NAME="yht Coverage Results" MODIFIED="1564043027398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/alien_invasion$game_func.coverage" NAME="game_func Coverage Results" MODIFIED="1564039155976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
